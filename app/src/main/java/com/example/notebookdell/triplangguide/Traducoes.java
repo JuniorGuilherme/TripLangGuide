@@ -13,6 +13,7 @@ import java.util.ArrayList;
 public class Traducoes implements Serializable{
     String pt_br;
     String english;
+    String aplicacao;
     static ArrayList<Traducoes> alimentos = new ArrayList<>();
     static ArrayList<Traducoes> numeros = new ArrayList<>();
     static ArrayList<Traducoes> referencia_familiar = new ArrayList<>();
@@ -20,11 +21,11 @@ public class Traducoes implements Serializable{
 
 
     public void carregarAlimentos(){
-        alimentos.add(addTraducao("Maça", "Apple"));
-        alimentos.add(addTraducao("Maracuja", "Passion Fruit"));
-        alimentos.add(addTraducao("Frango", "Chicken"));
-        alimentos.add(addTraducao("Alcatra", "Rump"));
-        alimentos.add(addTraducao("Feijão", "Bean"));
+        alimentos.add(addTraducao("Maça", "Apple", "Get an apple."));
+        alimentos.add(addTraducao("Maracuja", "Passion Fruit", "I want to have some passion fruit juice."));
+        alimentos.add(addTraducao("Frango", "Chicken", "Fried chicken, please."));
+        alimentos.add(addTraducao("Alcatra", "Rump", "From barbecue, I want rump."));
+        alimentos.add(addTraducao("Feijão", "Bean", "Buy 5kg of beans, please."));
 
     }
 
@@ -50,16 +51,14 @@ public class Traducoes implements Serializable{
     }
 
     public void carregarReferenciaFamiliar(){
-        referencia_familiar.add(addTraducao("Mãe", "Mother"));
-        referencia_familiar.add(addTraducao("Pai", "Father"));
-        referencia_familiar.add(addTraducao("Tio", "Uncle"));
-        referencia_familiar.add(addTraducao("Tia", "Aunt"));
-        referencia_familiar.add(addTraducao("Primo", "Cousin"));
-        referencia_familiar.add(addTraducao("Prima", "Cousin"));
-        referencia_familiar.add(addTraducao("Vó", "Grandmother"));
-        referencia_familiar.add(addTraducao("Vô", "Grandfather"));
-        referencia_familiar.add(addTraducao("Cunhada", "Sister in law"));
-        referencia_familiar.add(addTraducao("Cunhado", "Brother in law"));
+        referencia_familiar.add(addTraducao("Mãe", "Mon", "Mon, I'm hungry."));
+        referencia_familiar.add(addTraducao("Pai", "Dad", "Dad, give me that smartphone?"));
+        referencia_familiar.add(addTraducao("Tio", "Uncle", "Uncle, let's take a walk?"));
+        referencia_familiar.add(addTraducao("Tia", "Aunt", "My aunt is awesome."));
+        referencia_familiar.add(addTraducao("Primo", "Cousin", "My cousin is my best friend."));
+        referencia_familiar.add(addTraducao("Prima", "Cousin", "My cousin is very beatiful."));
+        referencia_familiar.add(addTraducao("Vó", "Grandmother", "I love my grandmother."));
+        referencia_familiar.add(addTraducao("Vô", "Grandfather", "My grandfather taught me how to fish."));
     }
 
     public ArrayList<Traducoes> retornaReferenciaFamiliar(){
@@ -83,11 +82,27 @@ public class Traducoes implements Serializable{
         return expressoes_comuns;
     }
 
+    public Traducoes addTraducao(String pt_br, String english, String aplicacao){
+        Traducoes t = new Traducoes();
+        t.setPt_br(pt_br);
+        t.setEnglish(english);
+        t.setAplicacao(aplicacao);
+        return t;
+    }
+
     public Traducoes addTraducao(String pt_br, String english){
         Traducoes t = new Traducoes();
         t.setPt_br(pt_br);
         t.setEnglish(english);
         return t;
+    }
+
+    public String getAplicacao() {
+        return aplicacao;
+    }
+
+    public void setAplicacao(String aplicacao) {
+        this.aplicacao = aplicacao;
     }
 
     public String getEnglish() {

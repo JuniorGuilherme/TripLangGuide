@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/viagem1"
+    android:contentDescription="Foto de wallpaper de fundo do aplicativo. A foto mostra um cachorro dentro de uma mala de viagem."
     android:orientation="vertical"
     tools:context="com.example.notebookdell.triplangguide.MainActivity">
 
@@ -17,10 +18,11 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/btnAlimentos"
             android:layout_width="299dp"
             android:layout_height="wrap_content"
-            android:text="Alimentos"
-            android:id="@+id/btnAlimentos"/>
+            android:contentDescription="Botão de acesso a tela de traduções de alimentos."
+            android:text="@string/alimentos" />
 
         <Button
             android:layout_width="match_parent"
@@ -37,31 +39,11 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/btnNumeros"
             android:layout_width="299dp"
             android:layout_height="wrap_content"
-            android:text="Numeros"
-            android:id="@+id/btnNumeros"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="+" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10sp"
-        android:layout_marginRight="10sp"
-        android:layout_marginTop="30sp"
-        android:orientation="horizontal">
-
-        <Button
-            android:layout_width="299dp"
-            android:layout_height="wrap_content"
-            android:text="Referencia Familiar"
-            android:id="@+id/btnReferenciaFamiliar"/>
+            android:contentDescription="Botão de acesso a tela de traduções de numeros."
+            android:text="@string/numeros" />
 
         <Button
             android:layout_width="match_parent"
@@ -79,10 +61,33 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/btnReferenciaFamiliar"
             android:layout_width="299dp"
             android:layout_height="wrap_content"
-            android:text="Expressões Comuns"
-            android:id="@+id/btnExpressoesComuns"/>
+            android:contentDescription="Botão de acesso a tela de traduções de referencias familiares."
+            android:text="@string/referencias_familiares" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="30sp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnExpressoesComuns"
+            android:layout_width="299dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="Botão de acesso a tela de traduções de expressões comuns."
+            android:text="@string/expressoes_comuns" />
 
         <Button
             android:layout_width="match_parent"

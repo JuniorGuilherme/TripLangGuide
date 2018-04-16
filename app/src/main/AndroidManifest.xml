@@ -19,7 +19,7 @@
         <activity android:name=".AlimentosActivity" />
         <activity android:name=".NumerosActivity" />
         <activity android:name=".ExpressoesComunsActivity" />
-        <activity android:name=".ReferenciaFamiliarActivity"></activity>
+        <activity android:name=".ReferenciaFamiliarActivity" />
     </application>
 
 </manifest>

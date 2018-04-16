@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TripLangGuide</string>
+    <string name="alimentos">Food</string>
+    <string name="numeros">Numbers</string>
+    <string name="expressoes_comuns">Commons Expressions</string>
+    <string name="referencias_familiares">Family References</string>
+</resources>

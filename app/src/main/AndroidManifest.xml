@@ -16,7 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AlimentosActivity"></activity>
+        <activity android:name=".AlimentosActivity" />
+        <activity android:name=".NumerosActivity" />
+        <activity android:name=".ExpressoesComunsActivity" />
+        <activity android:name=".ReferenciaFamiliarActivity"></activity>
     </application>
 
 </manifest>

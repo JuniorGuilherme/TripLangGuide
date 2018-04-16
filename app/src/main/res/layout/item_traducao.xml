@@ -4,35 +4,51 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:id="@+id/tvAlimentos"/>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="67dp"
-            android:layout_height="44dp"
+            android:id="@+id/imgUs"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             app:srcCompat="@drawable/us1" />
+
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/tvFraseIngles"/>
+            android:id="@+id/tvFraseIngles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
     </LinearLayout>
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp">
 
         <ImageView
-            android:layout_width="67dp"
-            android:layout_height="44dp"
-            app:srcCompat="@drawable/pt_br1" />
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/pt_br1"
+            android:id="@+id/imgPt"/>
+
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/tvFrasePortugues"/>
+            android:id="@+id/tvFrasePortugues"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
 </LinearLayout>

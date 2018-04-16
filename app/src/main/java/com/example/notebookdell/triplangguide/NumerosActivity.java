@@ -7,20 +7,20 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class AlimentosActivity extends AppCompatActivity {
+public class NumerosActivity extends AppCompatActivity {
     ListView lvTraducoes;
     TextView tvTitulo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_alimentos);
+        setContentView(R.layout.activity_numeros);
 
         lvTraducoes = findViewById(R.id.lvTraducoes);
         tvTitulo = (TextView) findViewById(R.id.tvTitulo);
-        ArrayList<Traducoes> alimentos = (ArrayList<Traducoes>) getIntent().getSerializableExtra("alimentos");
+        ArrayList<Traducoes> numeros = (ArrayList<Traducoes>) getIntent().getSerializableExtra("numeros");
 
-        lvTraducoes.setAdapter(new AdapterTraducao(alimentos, getApplicationContext()));
-        tvTitulo.setText("Alimentos");
+        lvTraducoes.setAdapter(new AdapterTraducao(numeros, getApplicationContext()));
+        tvTitulo.setText("Numeros");
     }
 }
